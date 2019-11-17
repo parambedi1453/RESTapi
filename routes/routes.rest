@@ -1,0 +1,27 @@
+GET http://localhost:3000/subscribers
+
+###
+# calling susbscriber by id here sams id i ve put
+GET http://localhost:3000/subscribers/5dd1402164fc8a3ad71a32be
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name" : "sam",
+    "subscribeToChannel" : "myChannel"
+}
+
+###
+DELETE  http://localhost:3000/subscribers/5dd1402164fc8a3ad71a32be
+
+
+###
+
+PATCH  http://localhost:3000/subscribers/5dd1402164fc8a3ad71a32be
+Content-Type: application/json
+
+{
+    "name" : "new name"
+}
